@@ -8,8 +8,8 @@ export const prisma =
 
 const globalForPrisma = global;
 
-if (process.env.NODE_ENV !== "production") {
-  globalForPrisma.prisma = prisma;
-}
+// if (process.env.NODE_ENV !== "production") {
+//   globalForPrisma.prisma = prisma;
+// }
 
 exports.prisma = globalForPrisma.prisma;
